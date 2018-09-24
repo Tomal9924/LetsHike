@@ -1,0 +1,7 @@
+C:\Users\tomal\Documents\Visual Studio 2013\Projects\letsHike\InterfaceClass\obj\Debug\InterfaceClass.csprojResolveAssemblyReference.cache
+C:\Users\tomal\Documents\Visual Studio 2013\Projects\letsHike\InterfaceClass\obj\Debug\InterfaceClass.dll
+C:\Users\tomal\Documents\Visual Studio 2013\Projects\letsHike\InterfaceClass\obj\Debug\InterfaceClass.pdb
+C:\Users\tomal\Documents\Visual Studio 2013\Projects\letsHike\InterfaceClass\bin\Debug\InterfaceClass.dll
+C:\Users\tomal\Documents\Visual Studio 2013\Projects\letsHike\InterfaceClass\bin\Debug\InterfaceClass.pdb
+C:\Users\tomal\Documents\Visual Studio 2013\Projects\letsHike\InterfaceClass\bin\Debug\EntityClass.dll
+C:\Users\tomal\Documents\Visual Studio 2013\Projects\letsHike\InterfaceClass\bin\Debug\EntityClass.pdb

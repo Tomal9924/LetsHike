@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>LetsHike</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css" title="style" />
+    <script type="text/javascript" src="Scripts/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="PackageJs.js">
+
+    </script>
+
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+            <div id="logo">
+                <div id="logo_text">
+                    <!-- class="logo_colour", allows you to change the colour of the text -->
+                    <h1><a href="index.html">Lets<span class="logo_colour">HiKE</span><span class="logo_colour2"></span></a></h1>
+                    <h2>A Ghost founder of A Mountain!</h2>
+                </div>
+            </div>
+            <div id="menubar">
+                <ul id="menu">
+                    <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+                    <li class="selected"><a href="Home.html">Home</a></li>
+                    <li><a href="HomeProductView.html">Products</a></li>
+                    <li><a href="HomePackageView.html">Packages</a></li>
+                    <li><a href="HomeLoginView.html">Login</a></li>
+                    <li><a href="SignUp.html">SignUp</a></li>
+                    <li><a href="HomeAdminView.html">Admin Page</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="site_content">
+            <div class="sidebar">
+                <!-- insert your sidebar items here -->
+
+
+
+
+
+                <h3>Search</h3>
+                <form method="post" action="#" id="search_form">
+                    <p>
+                        <input class="search" type="text" name="search_field" value="Enter keywords....." />
+                        <input name="search" type="image" style="border: 0; margin: 0 0 -9px 5px;" src="search.png" alt="Search" title="Search" />
+                    </p>
+                </form>
+            </div>
+
+            <div id="content">
+                <!-- insert the page content here -->
+
+                <h2 class="header">Packages</h2>
+                <!--<table>
+                    <tr>
+                        <td><b>Package Name</b></td>
+                        <td><input type="text" id="packagename"></td>
+                    </tr>
+                    <tr>
+                        <td><b>Package Details</b></td>
+                        <td><input type="text" id="packagedetails" style="color:red;width:500px;height:200px"></td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td><button id="btnSave" style="color:blue;">Save Data</button></td>
+                    </tr>
+
+                </table>-->
+
+                <button id="btnLoad">Check Packages</button>
+
+
+                <label id="msg"></label>
+                <br />
+                <br />
+                <table border="1">
+
+                    <tr>
+
+                        <th>Package Name</th>
+                        <th>Package Details</th>
+                        <th>Buy Packages</th>
+
+                    </tr>
+
+                    <tbody id="list"></tbody>
+                </table>
+
+
+                <ul></ul>
+            </div>
+        </div>
+        <div id="footer">
+            Copyright &copy; Mountaineers </a>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

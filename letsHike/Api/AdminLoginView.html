@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>LetsHike</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css" title="style" />
+    <script type="text/javascript" src="Scripts/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="PackageJs.js">
+
+    </script>
+
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+            <div id="logo">
+                <div id="logo_text">
+                    <!-- class="logo_colour", allows you to change the colour of the text -->
+                    <h1><a href="index.html">Lets<span class="logo_colour">HiKE</span><span class="logo_colour2"></span></a></h1>
+                    <h2>A Ghost founder of A Mountain!</h2>
+                </div>
+            </div>
+            <div id="menubar">
+                <ul id="menu">
+                    <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+                    <li class="selected"><a href="Home.html">Home</a></li>
+                    <li><a href="Product.html">Products</a></li>
+                    <li><a href="Packages.html">Packages</a></li>
+                    <li><a href="Login.html">Login</a></li>
+                    <li><a href="SignUp.html">SignUp</a></li>
+                    <li><a href="admin.html">Admin Page</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="site_content">
+            <div class="sidebar">
+                <!-- insert your sidebar items here -->
+
+
+
+
+
+                
+            </div>
+
+            <div id="content">
+                <!-- insert the page content here -->
+
+                <h2 class="header">Log In</h2>
+                            <table class="table table-bordered">
+                <thead>
+                    <tr class="success">
+                        <th colspan="2">
+                            New User Registration
+                            <a href="Login.html" class="btn btn-success pull-right">Login</a>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Usename</td>
+                        <td>
+                            <input type="text" id="txtUsername" placeholder="Username" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Password</td>
+                        <td>
+                            <input type="password" id="txtPassword"
+                                   placeholder="Password" />
+                        </td>
+                    </tr>
+                    <tr class="success">
+                        <td colspan="2">
+                            <input id="btnLogin" class="btn btn-success" type="button"
+                                   value="Login" />
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+			
+                <ul></ul>
+            </div>
+        </div>
+        <div id="footer">
+            Copyright &copy; Mountaineers </a>
+        </div>
+    </div>
+
+</body>
+</html>
+
+    <script src="Scripts/jquery-3.3.1.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $('#linkClose').click(function () {
+                $('#divError').hide('fade');
+            });
+
+            $('#btnLogin').click(function () {
+                $.ajax({
+                    // Post username, password & the grant type to /token
+                    url: '/token',
+                    method: 'POST',
+                    contentType: 'application/json',
+                    data: {
+                        Username: $('#txtUsername').val(),
+                        Password: $('#txtPassword').val(),
+                        grant_type: 'password'
+                    },
+                    // When the request completes successfully, save the
+                    // access token in the browser session storage and
+                    // redirect the user to Data.html page. We do not have
+                    // this page yet. So please add it to the
+                    // EmployeeService project before running it
+                    success: function (response) {
+                        sessionStorage.setItem("accessToken", response.access_token);
+                        //window.location.href = "Data.html";
+                    },
+                    // Display errors if any in the Bootstrap alert <div>
+                    error: function (jqXHR) {
+                        $('#divErrorText').text(jqXHR.responseText);
+                        $('#divError').show('fade');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LetsHike</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css" title="style" />
+    <script type="text/javascript" src="Scripts/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="xa.js">
+
+    </script>
+	
+	
+			<script>
+	
+	function Getname(){
+	
+		if (document.getElementById('travellername').value == "")
+    {
+	    var mes="Insert Your Name";
+		document.getElementById('nameError').innerHTML = mes;
+		namrError.style.color= "red"
+    }
+			else
+		{
+			document.getElementById('namrError').innerHTML = "";
+		}
+    }
+	
+	function Getaddress(){
+	
+		if (document.getElementById('travelleraddress').value == "")
+    {
+	    var mes="Insert Your Address";
+		document.getElementById('addressError').innerHTML = mes;
+		namrError.style.color= "red";
+    }
+			else
+		{
+			document.getElementById('phoneError').innerHTML = "";
+		}
+    }
+	
+	function Getphone(){
+	
+		if (document.getElementById('travellerphone').value == "")
+    {
+	    var mes="Insert Your Mobile Number";
+		document.getElementById('phoneError').innerHTML = mes;
+		namrError.style.color= "red";
+    }
+			else
+		{
+			document.getElementById('phoneError').innerHTML = "";
+		}
+    }
+	
+	function Getemail(){
+	
+		if (document.getElementById('travelleremail').value == "")
+    {
+	    var mes="Insert Your E-Mail Address";
+		document.getElementById('emailError').innerHTML = mes;
+		namrError.style.color= "red";
+    }
+			else
+		{
+			document.getElementById('emailError').innerHTML = "";
+		}
+    }
+	
+	function Getusername(){
+	
+		if (document.getElementById('travellerusername').value == "")
+    {
+	    var mes="Insert Your User Name";
+		document.getElementById('usernameError').innerHTML = mes;
+		namrError.style.color= "red";
+    }
+			else
+		{
+			document.getElementById('usernameError').innerHTML = "";
+		}
+    }
+	
+	function Getpassword(){
+	
+		if (document.getElementById('travellerpassword').value == "")
+    {
+	    var mes="Insert Your Password";
+		document.getElementById('passwordError').innerHTML = mes;
+		namrError.style.color= "red";
+    }
+			else
+		{
+			document.getElementById('passwordError').innerHTML = "";
+		}
+    }
+	
+	
+
+	</script>
+	
+	
+	
+	
+	
+	
+	
+
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+            <div id="logo">
+                <div id="logo_text">
+                    <!-- class="logo_colour", allows you to change the colour of the text -->
+                    <h1><a href="index.html">Lets<span class="logo_colour">HiKE</span><span class="logo_colour2"></span></a></h1>
+                    <h2>A Ghost founder of A Mountain!</h2>
+                </div>
+            </div>
+            <div id="menubar">
+                <ul id="menu">
+                    <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+                    <li class="selected"><a href="Home.html">Home</a></li>
+					<li><a href="HomeProductView.html">Products</a></li>
+                    <li><a href="HomePackageView.html">Packages</a></li>
+                    <li><a href="Logout.html">SignUp</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="site_content">
+            <div class="sidebar">
+                <!-- insert your sidebar items here -->
+
+
+
+
+
+                <h3>Search</h3>
+                
+                    <p>
+                        <input class="search" type="text" name="search_field" id="search" />
+                        <input name="search" type="image" style="border: 0; margin: 0 0 -9px 5px;" src="search.png" alt="Search" title="Search" />
+                    </p>
+                
+            </div>
+
+            <div id="content">
+                <!-- insert the page content here -->
+
+                <h2 class="header">Travellers Registration</h2>
+                <table>
+                    <tr>
+                        <td>Name</td>
+                        <td><input type="text" id="travellername" name ="travellername" onblur="Getname()"></td>
+						<td id="nameError"></td>
+                    </tr>
+                    <tr>
+                        <td>Address</td>
+                        <td><input type="text" id="travelleraddress" name ="travelleraddress" onblur="Getaddress()"></td>
+						<td id="addressError"></td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td><input type="text" id="travelleremail" name ="travelleremail" onblur="Getemail()"></td>
+						<td id="emailError"></td>
+                    </tr>
+					<tr>
+                        <td>Phone</td>
+                        <td><input type="text" id="travellerphone" name ="travellerphone" onblur="Getphone()"></td>
+						<td id="phoneError"></td>
+                    </tr>
+                    <tr>
+                        <td>Username</td>
+                        <td><input type="text" id="travellerusername" name ="travellerusername" onblur="Getusername()"></td>
+						<td id="usernameError"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Password</td>
+                        <td><input type="text" id="travellerpassword" name ="travellerpassword" onblur="Getpassword()"></td>
+						<td id="passwordError"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><button id="btnSave">Save</button></td>
+                    </tr>
+                </table>
+
+
+                <ul></ul>
+            </div>
+        </div>
+        <div id="footer">
+            <a>Copyright &copy; Mountaineers </a>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
